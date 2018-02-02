@@ -494,6 +494,7 @@ h1 {
 .b-location__label {
     display: block;
     margin-bottom: 8px;
+    font-size: 11px;
 }
 
 .b-location-search-input {
