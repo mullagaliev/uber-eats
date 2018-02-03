@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
 <head>
-    <title>Stores</title>
+    <title>Restaurant</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/select.css">
+    <link rel="stylesheet" href="./css/detail.css">
     <script src="./js/jquery.js"></script>
 </head>
 <body>
@@ -119,225 +120,127 @@
         </div>
     </div>
 </header>
-<main>
-    <div class="container">
+<section class="b-detail-header">
+    <div class="container b-tab-box-nav-container">
         <div class="row">
-            <div class="col-xs-12">
-                <div class="b-search">
-                    <div class="b-search-restaurant">
-                        <input type="text" placeholder="Search for restaurant or cuisine">
-                    </div>
+            <div class="col-xs-12 col-md-7 col-lg-5 b-detail-header-info">
+                <h1 class="b-detail-header-title">
+                    Трактир «Пушкин»
+                </h1>
+                <div class="b-meta">
+                    <span class="b-price">100</span>
+                    <span>Европейская</span>
                 </div>
-            </div>
-        </div>
-        <hr class="separator-8-24 separator--black"/>
-        <div class="visible-sm row b-location">
-            <div class="col-xs-3">
-                <label class="b-location__label b-location__when">When</label>
-                <input class="b-time" type="text" value="ASAP">
-            </div>
-            <div class="col-xs-9">
-                <label class="b-location__label b-location__to">to</label>
-                <span class="b-location-search-input">
-                    <input type="text" placeholder="ul. Bolshaya Dmitrov">
-                </span>
-            </div>
-        </div>
-        <div class="b-restaurants">
-            <h1>Moscow Restaurants</h1>
-            <div class="row b-items-list">
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <div class="b-item-list">
-                        <div class="b-item-list__preview"
-                             style="background-image: url('./images/restaurants/1.png')">
-                        </div>
-                        <div class="b-item-list__description">
-                            <h2 class="b-item-list__title">Макдоналдс — Газетны</h2>
-                            <div class="b-item-list__meta">
-                                <span class="b-price">
-                                    100
-                                </span>
-                                <span>Бургеры</span>
-                                <span>Суши</span>
-                                <span>Азия</span>
-                            </div>
-                            <div class="b-item-list__extra">
-                                <time>25 - 30 Min</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <div class="b-item-list">
-                        <div class="b-item-list__preview"
-                             style="background-image: url('./images/restaurants/2.png')">
-                        </div>
-                        <div class="b-item-list__description">
-                            <h2 class="b-item-list__title">Макдоналдс — Газетны</h2>
-                            <div class="b-item-list__meta">
-                                <span class="b-price">
-                                    100
-                                </span>
-                                <span>Бургеры</span>
-                                <span>Суши</span>
-                                <span>Азия</span>
-                            </div>
-                            <div class="b-item-list__extra">
-                                <time>25 - 30 Min</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <div class="b-item-list">
-                        <div class="b-item-list__preview"
-                             style="background-image: url('./images/restaurants/3.png')">
-                        </div>
-                        <div class="b-item-list__description">
-                            <h2 class="b-item-list__title">Макдоналдс — Газетны</h2>
-                            <div class="b-item-list__meta">
-                                <span class="b-price">
-                                    100
-                                </span>
-                                <span>Бургеры</span>
-                                <span>Суши</span>
-                                <span>Азия</span>
-                            </div>
-                            <div class="b-item-list__extra">
-                                <time>25 - 30 Min</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <div class="b-item-list">
-                        <div class="b-item-list__preview"
-                             style="background-image: url('./images/restaurants/4.png')">
-                        </div>
-                        <div class="b-item-list__description">
-                            <h2 class="b-item-list__title">Макдоналдс — Газетны</h2>
-                            <div class="b-item-list__meta">
-                                <span class="b-price">
-                                    100
-                                </span>
-                                <span>Бургеры</span>
-                                <span>Суши</span>
-                                <span>Азия</span>
-                            </div>
-                            <div class="b-item-list__extra">
-                                <time>25 - 30 Min</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <div class="b-item-list">
-                        <div class="b-item-list__preview"
-                             style="background-image: url('./images/restaurants/5.png')">
-                        </div>
-                        <div class="b-item-list__description">
-                            <h2 class="b-item-list__title">Макдоналдс — Газетны</h2>
-                            <div class="b-item-list__meta">
-                                <span class="b-price">
-                                    100
-                                </span>
-                                <span>Бургеры</span>
-                                <span>Суши</span>
-                                <span>Азия</span>
-                            </div>
-                            <div class="b-item-list__extra">
-                                <time>25 - 30 Min</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <div class="b-item-list">
-                        <div class="b-item-list__preview"
-                             style="background-image: url('./images/restaurants/6.png')">
-                        </div>
-                        <div class="b-item-list__description">
-                            <h2 class="b-item-list__title">Макдоналдс — Газетны</h2>
-                            <div class="b-item-list__meta">
-                                <span class="b-price">
-                                    100
-                                </span>
-                                <span>Бургеры</span>
-                                <span>Суши</span>
-                                <span>Азия</span>
-                            </div>
-                            <div class="b-item-list__extra">
-                                <time>25 - 30 Min</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <div class="b-item-list">
-                        <div class="b-item-list__preview"
-                             style="background-image: url('./images/restaurants/7.png')">
-                        </div>
-                        <div class="b-item-list__description">
-                            <h2 class="b-item-list__title">Макдоналдс — Газетны</h2>
-                            <div class="b-item-list__meta">
-                                <span class="b-price">
-                                    100
-                                </span>
-                                <span>Бургеры</span>
-                                <span>Суши</span>
-                                <span>Азия</span>
-                            </div>
-                            <div class="b-item-list__extra">
-                                <time>25 - 30 Min</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <div class="b-item-list">
-                        <div class="b-item-list__preview"
-                             style="background-image: url('./images/restaurants/8.png')">
-                        </div>
-                        <div class="b-item-list__description">
-                            <h2 class="b-item-list__title">Макдоналдс — Газетны</h2>
-                            <div class="b-item-list__meta">
-                                <span class="b-price">
-                                    100
-                                </span>
-                                <span>Бургеры</span>
-                                <span>Суши</span>
-                                <span>Азия</span>
-                            </div>
-                            <div class="b-item-list__extra">
-                                <time>25 - 30 Min</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-6 col-lg-4">
-                    <div class="b-item-list">
-                        <div class="b-item-list__preview"
-                             style="background-image: url('./images/restaurants/9.png')">
-                        </div>
-                        <div class="b-item-list__description">
-                            <h2 class="b-item-list__title">Макдоналдс — Газетны</h2>
-                            <div class="b-item-list__meta">
-                                <span class="b-price">
-                                    100
-                                </span>
-                                <span>Бургеры</span>
-                                <span>Суши</span>
-                                <span>Азия</span>
-                            </div>
-                            <div class="b-item-list__extra">
-                                <time>25 - 30 Min</time>
-                            </div>
-                        </div>
-                    </div>
+                <div class="b-extra-time">
+                    <time>25 - 30 Min</time>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<section class="hidden-sm b-tab-box-nav">
+    <div class="container">
+        <div class="row">
+            <nav class="b-tab-box-nav__list">
+                <a class="active" href="#tab1">Закуски</a>
+                <a href="#tab2">Салаты</a>
+                <a href="#tab3">Супы</a>
+                <a href="#tab4">Горячие блюда</a>
+                <a href="#tab5">Гарниры</a>
+                <a href="#tab6">Десерты</a>
+            </nav>
+        </div>
+    </div>
+</section>
+<main>
+    <div class="container">
+        <h2 class="dishes-title">Закуски</h2>
+        <div class="row b-items-dishes-list">
+            <div class="col-xs-12 col-lg-6">
+                <div class="b-item-dishes-list">
+                    <div class="b-item-dishes-list__info">
+                        <div>
+                            <h3 class="b-item-dishes-list__title">Сельдь на бородинском хлебе</h3>
+                            <span class="b-item-dishes-list__subtitle">С яйцом и огурцом</span>
+                        </div>
+                        <span class="b-item-dishes-list__price b-price">100</span>
+                    </div>
+                    <div class="b-item-dishes-list__preview"
+                         style="background-image: url('./images/dishes/1.png');">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <div class="b-item-dishes-list">
+                    <div class="b-item-dishes-list__info">
+                        <div>
+                            <h3 class="b-item-dishes-list__title">Сельдь на бородинском хлебе</h3>
+                            <span class="b-item-dishes-list__subtitle">С яйцом и огурцом</span>
+                        </div>
+                        <span class="b-item-dishes-list__price b-price">100</span>
+                    </div>
+                    <div class="b-item-dishes-list__preview"
+                         style="background-image: url('./images/dishes/1.png');">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <div class="b-item-dishes-list">
+                    <div class="b-item-dishes-list__info">
+                        <div>
+                            <h3 class="b-item-dishes-list__title">Сельдь на бородинском хлебе</h3>
+                            <span class="b-item-dishes-list__subtitle">С яйцом и огурцом</span>
+                        </div>
+                        <span class="b-item-dishes-list__price b-price">100</span>
+                    </div>
+                    <div class="b-item-dishes-list__preview"
+                         style="background-image: url('./images/dishes/1.png');">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <div class="b-item-dishes-list">
+                    <div class="b-item-dishes-list__info">
+                        <div>
+                            <h3 class="b-item-dishes-list__title">Сельдь на бородинском хлебе</h3>
+                            <span class="b-item-dishes-list__subtitle">С яйцом и огурцом</span>
+                        </div>
+                        <span class="b-item-dishes-list__price b-price">100</span>
+                    </div>
+                    <div class="b-item-dishes-list__preview"
+                         style="background-image: url('./images/dishes/1.png');">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <div class="b-item-dishes-list">
+                    <div class="b-item-dishes-list__info">
+                        <div>
+                            <h3 class="b-item-dishes-list__title">Сельдь на бородинском хлебе</h3>
+                            <span class="b-item-dishes-list__subtitle">С яйцом и огурцом</span>
+                        </div>
+                        <span class="b-item-dishes-list__price b-price">100</span>
+                    </div>
+                    <div class="b-item-dishes-list__preview"
+                         style="background-image: url('./images/dishes/1.png');">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <div class="b-item-dishes-list">
+                    <div class="b-item-dishes-list__info">
+                        <div>
+                            <h3 class="b-item-dishes-list__title">Сельдь на бородинском хлебе</h3>
+                            <span class="b-item-dishes-list__subtitle">С яйцом и огурцом</span>
+                        </div>
+                        <span class="b-item-dishes-list__price b-price">100</span>
+                    </div>
+                    <div class="b-item-dishes-list__preview"
+                         style="background-image: url('./images/dishes/1.png');">
+                    </div>
+                </div>
+            </div>
+        </div>
 </main>
 <footer>
     <div class="container">
