@@ -318,7 +318,13 @@ main {
     padding-top: 32px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 80px;
+    padding-bottom: 48px;
+}
+
+@media (min-width: 768px) {
+    main {
+        padding-bottom: 80px;
+    }
 }
 
 footer {
@@ -380,15 +386,25 @@ hr {
     margin-bottom: 40px;
 }
 
-h1 {
-    margin-top: 40px;
-    margin-bottom: 16px;
+h1, h2, h3 {
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: normal;
+    color: #1D1D1D;
+}
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 16px;
     line-height: 34px;
     font-size: 22px;
-    color: #1D1D1D;
+}
+
+h2 {
+    margin-top: 26px;
+    margin-bottom: 32px;
+    line-height: 34px;
+    font-size: 22px;
 }
 
 @media (min-width: 768px) {
@@ -575,8 +591,13 @@ h1 {
 
 .b-item-list {
     height: 366px;
-    background: rgba(117, 117, 117, 0.04);
+    background: transparent;
     margin-bottom: 16px;
+}
+
+.b-item-list:hover {
+    cursor: pointer;
+    background: rgba(117, 117, 117, 0.04);
 }
 
 .b-item-list__preview {
