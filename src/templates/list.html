@@ -10,24 +10,26 @@ title: Stores
     <div class="row">
       <div class="col-xs-12">
         <div class="b-search">
-          <div class="b-search-restaurant">
-            <input type="text" placeholder="Search for restaurant or cuisine">
-          </div>
+          <form  class="b-search-restaurant" action="/search.html">
+            <input name="q" type="text" placeholder="Search for restaurant or cuisine">
+          </form>
         </div>
       </div>
     </div>
     <hr class="separator-8-24 separator--black"/>
-    <div class="visible-sm row b-location">
-      <div class="col-xs-3">
-        <label class="b-location__label b-location__when">When</label>
-        <input class="b-time" type="text" value="ASAP">
-      </div>
-      <div class="col-xs-9">
-        <label class="b-location__label b-location__to">to</label>
-        <span class="b-location-search-input">
-                    <input type="text" placeholder="ul. Bolshaya Dmitrov">
-                </span>
-      </div>
+    <div class="visible-sm row">
+      <form class="b-location" action="">
+        <div class="col-xs-3">
+          <label class="b-location__label b-location__when">When</label>
+          <input class="b-time" name="when" type="text" value="ASAP">
+        </div>
+        <div class="col-xs-9">
+          <label class="b-location__label b-location__to">to</label>
+          <span class="b-location-search-input">
+              <input type="text" name="location" placeholder="ul. Bolshaya Dmitrov">
+          </span>
+        </div>
+      </form>
     </div>
     <div class="b-restaurants">
       <h1>Moscow Restaurants</h1>

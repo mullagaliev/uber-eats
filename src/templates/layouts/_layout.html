@@ -12,7 +12,7 @@
   <link rel="stylesheet" media="all" href="css/app.css">
   <link rel="stylesheet" href="../../css/normalize.css">
   <link rel="stylesheet" href="../../css/styles.css">
-  <link rel="stylesheet" href="../../css/select.css">
+  <link rel="stylesheet" href="../../css/form.css">
   <link rel="stylesheet" href="../../css/detail.css">
   {# {% include "../partials/_media-tags.html" %} #}
 </head>
@@ -112,12 +112,14 @@
           </svg>
         </a>
       </div>
-      <div class="hidden-sm col-md-5 b-location">
-        <input class="b-time" type="text" value="ASAP">
-        <span class="b-location__to">to</span>
-        <span class="b-location-search-input">
-                    <input type="text" placeholder="ul. Bolshaya Dmitrov">
-                </span>
+      <div class="hidden-sm col-md-5">
+        <form class="b-location" action="/search">
+          <input class="b-time" name="when" type="text" value="ASAP">
+          <span class="b-location__to">to</span>
+          <span class="b-location-search-input">
+            <input type="text" name="location" placeholder="ul. Bolshaya Dmitrov">
+          </span>
+        </form>
       </div>
       <div class="col-xs-6 col-md-5 col-lg-4 b-header-btn">
         <button class="btn">Sign in</button>
@@ -226,11 +228,11 @@
     <div class="row">
       <div class="col-xs-12 col-md-3">
         <div class="b-social">
-          <div class="sel sel--black-panther">
-            <select name="select-profession" id="select-profession">
-              <option value="" disabled>English</option>
-              <option value="hacker">Russian</option>
-              <option value="hacker">German</option>
+          <div class="c-select">
+            <select name="select-lang" id="select-lang">
+              <option value="eng">English</option>
+              <option value="ru">Russian</option>
+              <option value="de">German</option>
             </select>
           </div>
           <div class="c-tag">
