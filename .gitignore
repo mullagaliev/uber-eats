@@ -20,6 +20,8 @@ Thumbs.db
 .tmproj
 *.esproj
 nbproject
+*.sublime-project
+*.sublime-workspace
 .idea
 
 # Folders to ignore
