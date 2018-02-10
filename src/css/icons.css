@@ -1,0 +1,48 @@
+.icons {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icons--black-logo {
+  width: 107px;
+  height: 11px;
+  background-image: url(../icons/black-logo.svg);
+}
+
+@media (min-width: 991px) {
+  .icons--black-logo {
+    width: 121px;
+    height: 13px;
+  }
+}
+
+.icons--white-logo {
+  width: 192px;
+  height: 20px;
+  background-image: url(../icons/white-logo.svg);
+}
+
+.icons--basket {
+  background: url("../icons/basket.svg");
+  width: 19px;
+  height: 23px;
+}
+
+.icons--social-facebook {
+  width: 24px;
+  height: 24px;
+  background-image: url(../icons/social/facebook.svg);
+}
+
+.icons--social-twitter {
+  width: 24px;
+  height: 24px;
+  background-image: url(../icons/social/twitter.svg);
+}
+
+.icons--social-instagram {
+  width: 24px;
+  height: 24px;
+  background-image: url(../icons/social/instagram.svg);
+}
