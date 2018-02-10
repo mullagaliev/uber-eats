@@ -1,0 +1,7 @@
+ProjectTitle: UderEats
+
+PageList:
+- file: list.html
+  ready: 50
+- file: detail.html
+  ready: 50
