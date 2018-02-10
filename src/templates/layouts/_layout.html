@@ -112,12 +112,14 @@
           </svg>
         </a>
       </div>
-      <div class="hidden-sm col-md-5 b-location">
-        <input class="b-time" type="text" value="ASAP">
-        <span class="b-location__to">to</span>
-        <span class="b-location-search-input">
-                    <input type="text" placeholder="ul. Bolshaya Dmitrov">
-                </span>
+      <div class="hidden-sm col-md-5">
+        <form class="b-location" action="/search">
+          <input class="b-time" type="text" value="ASAP">
+          <span class="b-location__to">to</span>
+          <span class="b-location-search-input">
+            <input type="text" placeholder="ul. Bolshaya Dmitrov">
+          </span>
+        </form>
       </div>
       <div class="col-xs-6 col-md-5 col-lg-4 b-header-btn">
         <button class="btn">Sign in</button>
