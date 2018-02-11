@@ -1,19 +1,24 @@
 {# Description no longer than 155 characters #}
-<meta name="description" content="{{ description }}">
+<meta name="description" content="{% if description %}{{ description }}{% endif %}">
+<meta name="keywords" content="{% if keywords %}{{ keywords }}{% endif %}">
+<link rel="canonical" href="https://localhost.ru/{% if link %}{{ link }}{% endif %}">
+
 <!-- Twitter Card data -->
-<meta name="twitter:card" content="{{ twitter_summary }}">
-<meta name="twitter:site" content="{{ twitter_publisher }}">
-<meta name="twitter:title" content="{{ twitter_title }}">
-<meta name="twitter:description" content="{{ twitter_description }}">
-<meta name="twitter:creator" content="{{ twitter_author }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@UberEats">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:creator" content="@UberEats">
 {# Twitter Summary card images must be at least 120x120px #}
-<meta name="twitter:image" content="{{ twitter_image }}">
+<meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/3100005042/1512660548/1500x500">
 
 <!-- Open Graph data -->
-<meta property="og:title" content="{{ og_title }}">
-<meta property="og:type" content="article">
-<meta property="og:url" content="{{ og_url }}">
-<meta property="og:image" content="{{ og_image }}">
-<meta property="og:description" content="{{ og_description }}">
-<meta property="og:site_name" content="{{ og_sitename }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU"/>
+
+<meta property="og:title" content="{{ title }}">
+<meta property="og:url" content="{{ link }}">
+<meta property="og:image" content="https://pbs.twimg.com/profile_banners/3100005042/1512660548/1500x500">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:site_name" content="https://localhost">
 <meta property="fb:admins" content="{{ fb_admins }}">
