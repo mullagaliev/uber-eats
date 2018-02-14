@@ -7,6 +7,7 @@ function build(cb) {
         'clean',
         'sprite:svg',
         'sass',
+        'css',
         'nunjucks',
         'webpack',
         'copy',
